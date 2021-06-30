@@ -1,0 +1,134 @@
+body{ 
+    background-color: #b0e7f8;  
+    font-family: sans-serif;
+}
+
+.form{
+    width: 500px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.square{
+    box-shadow: 0px 0px 5px #ccc;
+    background-color: whitesmoke;  
+    padding: 100px; 
+    border-radius: 10px;
+}
+
+.squaretop{
+    text-align: center;
+}
+
+.title{
+    color: #0b81af;
+    font-weight: bold;
+}
+
+.dados{
+    margin-bottom: 15px;
+}
+
+.dados > label{
+    width: 100%;
+    display: block;
+}
+
+.dados > input{
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    padding: 4px;
+}
+
+.dados > button > a{
+    background-color: inherit;
+    text-decoration: none; 
+    color: black !important;
+}
+
+.dados > button{
+    background-color: #4bb6e0;
+    width: 102%;
+    border-radius: 10px;
+    padding: 5px; 
+    font-weight: bold;
+ }
+
+.cadastro > button{
+    background-color: #f05aa0;
+    width: 102%;
+    border-radius: 10px;
+    padding: 5px; 
+    font-weight: bold;
+}
+
+.d-grid{
+    padding: 100px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.carousel-inner>.carousel-item>img{
+margin: auto;
+}
+
+#sidebar-container{
+    min-height: 100vh;
+}
+
+#sidebar-container>.logo{
+    padding: .875rem 1.25rem;
+    color:black;
+    font-weight: bold;
+}
+
+#sidebar-container>.menu{
+    width: 12rem;
+    margin-left: 20px;
+}
+
+.bg-info >.menu>a{
+    color: black;
+    padding: 10px; 
+    text-decoration: none;
+}
+
+.collapse.navbar-collapse{
+    flex-direction: row-reverse;
+}
+
+.avatar{
+    max-width: 40px;
+}
+
+#content{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom:5rem;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.stat{
+    border-right: 1px solid #ccc;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card-title2{
+    text-align: left;
+    font-weight: bold;
+}
+

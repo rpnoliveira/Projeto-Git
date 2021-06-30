@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.0/dist/chart.min.js"
+        integrity="sha256-sKuIOg+m9ZQb96MRaiHCMzLniSnMlTv1h1h4T74C8ls=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+    <div class="d-flex">
+        <div id="sidebar-container" class="bg-info">
+            <div class="logo">
+                <h4>Health Track</h4>
+            </div>
+            <div class="menu">
+                <a href="./peso.html"><i class="bi bi-calculator"></i> Peso</a>
+                <a href="#" class="d-block"><i class="bi bi-bicycle"></i> Atividades</a>
+                <a href="#" class="d-block"><i class="bi bi-cup-straw"></i> Alimentos</a>
+                <a href="#" class="d-block"><i class="bi bi-graph-up"></i> Metas</a>
+                <a href="#" class="d-block"><i class="bi bi-alarm"></i> Lembretes</a>
+                <a href="#" class="d-block"><i class="bi bi-hammer"></i> Configurações</a>
+            </div>
+        </div>
+        <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./Imagens/Users-User-Female.png" class="img-fluid avatar mr-2">
+                                    Renata Nogueira
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#">Anotações</a></li>
+                                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="content">
+                <section class="py-3">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 stat">
+                                        <h6 class="text-muted">Passos dados</h6>
+                                        <h3 class="font-weight-bold">2500</h3>
+                                    </div>
+                                    <div class="col-lg-3 stat">
+                                        <h6 class="text-muted">Calorias</h6>
+                                        <h3 class="font-weight-bold">1200</h3>
+                                    </div>
+                                    <div class="col-lg-3 stat">
+                                        <h6 class="text-muted">Horas de sono</h6>
+                                        <h3 class="font-weight-bold">6h 34min</h3>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="text-muted">Atividades</h6>
+                                        <h3 class="font-weight-bold">3h</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card rounded-0">
+                                    <div class="card-header">
+                                        <h5>Sono</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="myChart"></canvas>
+                                        <script src="chart.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card rounded-0">
+                                    <div class="card-header">
+                                        <h5>Estatísticas</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="./Imagens/estatisticas.jpg" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+</body>
+</html>
